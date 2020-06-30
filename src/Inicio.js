@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMobile } from 'react-device-detect';
+// import { isMobile } from 'react-device-detect';
 
 // import InicioC from './InicioC'
 import InicioN from './InicioN'
@@ -7,12 +7,12 @@ import InicioN from './InicioN'
 
 function Inicio() {
 
-    if (isMobile) {
-        return (
-          <InicioN/>
-        //  <InicioC></InicioC>
-        );
-      }
+    // if (isMobile) {
+    //     return (
+    //       <InicioN/>
+    //     //  <InicioC></InicioC>
+    //     );
+    //   }
     
     //versao web
     return (
