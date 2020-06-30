@@ -9,7 +9,8 @@ function Inicio() {
 
     if (isMobile) {
         return (
-         <InicioC></InicioC>
+          <InicioN/>
+        //  <InicioC></InicioC>
         );
       }
     
