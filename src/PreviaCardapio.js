@@ -38,7 +38,7 @@ const PreviaCardapio = () => {
       <div className="cont-entregas">
         <div className="titulo-entrega">Entregas</div>
         <div className="previaEntregas">
-          <h2>Ligue para 2541-2897 e faça seu pedido com o atendente</h2>
+          <div className="texto-entregas"> Nosso número é 2541-2897 <br/> Faça seu pedido com o atendente <br/> A taxa de entrega é de R$ 6,00</div>
         </div>
       </div>
     </div>

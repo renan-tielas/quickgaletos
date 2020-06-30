@@ -38,6 +38,8 @@ export default InicioN;
         Carnes 1 2 3
         Acompanhamentos 1 2
 
+      ABA RECOMENDAÇÕES OU dentro de nossa historia ter matérias, prêmios e reviews
+
 
         Podendo escolher clicando na setinha lateral, ou em uma caixa
         de seleçao, que cai
