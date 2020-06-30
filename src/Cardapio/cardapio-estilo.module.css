@@ -235,10 +235,22 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-
+  
 
   .cont_cardapio {
     height: 25rem;
     width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .previaCardapio2 {
+    
+    width: 115%;
+    height: 150%;
+    position: relative;
+    right:-1rem;
+
   }
 }
