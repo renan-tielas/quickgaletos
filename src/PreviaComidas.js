@@ -19,7 +19,7 @@ const PreviaComidas = () => {
     id: [1, 2, 3, 4, 5, 6],
 
     nome: [
-      ['Galeto', 'galeto 2'],
+      ['Galetooooooo', 'galeto 2'],
       ['Linguiça e Frita', 'Linguiça e Frita2'],
       ['Salada e Suco', 'Salada e Suco2'],
       ['Pudim', 'Pudim2'],
