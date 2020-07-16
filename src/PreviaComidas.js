@@ -9,6 +9,7 @@ const PreviaComidas = () => {
       SetPagina((pagina_comidas) => pagina_comidas + 1);
     }
   };
+
   const paginaMenos = () => {
     if (pagina_comidas > 0) {
       SetPagina((pagina_comidas) => pagina_comidas - 1);
@@ -18,31 +19,51 @@ const PreviaComidas = () => {
   const comidas = {
     id: [1, 2, 3, 4, 5, 6],
 
+    // nome: [
+    //   ['Galeto', 'Churrasqueto', 'Porção de Linguiças'],
+    //   ['Batata Frita', 'Batata Portuguesa', 'Batata Cozida'],
+    //   ['Farofa de Ovos', 'Farofa de Banana e Ovos', 'Farofa à Brasileira'],
+    //   ['Espeto Vegetariano', 'Legumes Cozidos', 'Espetinho de Pimentão e Cebola'],
+    //   ['Salada de Maionese', 'Feijão', 'Pudim'],
+    //   ['Arroz com Brócolis', 'Arroz à Grega', 'Arroz Branco'],
+    // ],
+
+
+    // nome: [
+    //   ['Galeto', 'Porção de Linguiças'],
+    //   ['Batata Frita',  'Batata Cozida'],
+    //   ['Farofa de Ovos', 'Farofa à Brasileira'],
+    //   ['Espeto Vegetariano',  'Espetinho de Pimentão e Cebola'],
+    //   ['Legumes Cozidos', 'Feijão', 'Pudim'],
+    //   ['Arroz com Brócolis', 'Arroz à Grega', 'Arroz Branco'],
+    // ],
+
     nome: [
-      ['Galeto', 'galeto 2'],
-      ['Linguiça e Frita', 'Linguiça e Frita2'],
-      ['Salada e Suco', 'Salada e Suco2'],
-      ['Pudim', 'Pudim2'],
-      ['Batata Frita', 'Batata Frita2'],
-      ['Farofa à Brasileira', 'Farofa à Brasileira2'],
+      ['Galeto', 'Porção de Linguiças'],
+      ['Batata Frita', 'Batata Cozida'],
+      ['Farofa de Ovos', 'Farofa à Brasileira'],
+      ['Espeto Vegetariano',  'Espetinho de Pimentão e Cebola'],
+      ['Legumes Cozidos', 'Feijão'],
+      ['Arroz com Brócolis', 'Arroz à Grega'],
     ],
 
+
     arq: [
-      ['foto-3.jpg', 'foto-6.jpg'],
-      ['foto-6.jpg', 'foto-3.jpg'],
-      ['foto-2.jpg', 'foto-6.jpg'],
-      ['foto-7.jpg', 'foto-6.jpg'],
-      ['foto-8.jpg', 'foto-6.jpg'],
-      ['foto-10.jpg', 'foto-8.jpg'],
+      ['galeto.jpg', 'linguiça.jpg' ],
+      ['batata frita.jpg', 'batata cozida.png' ],
+      ['farofa ovos.JPG', 'farofa brasileira.jpg'],
+      ['espeto vegetariano.JPG', 'espetinho pimentao e cebola.png' ],
+      ['legumes cozidos.JPG', 'feijao.jpg'],
+      ['arroz com brocolis.JPG', 'arroz a grega.JPG' ],
     ],
 
     preco: [
-      ['R$ 26,90', 'R$ 20,90'],
-      ['R$ 25,90', 'R$ 20,90'],
-      ['R$ 19,90', 'R$ 20,90'],
-      ['R$ 8,90', 'R$ 20,90'],
-      ['R$ 22,90', 'R$ 20,90'],
-      ['R$ 20,90', 'R$ 20,90'],
+      ['R$ 25,80', 'R$ 15,90'],
+      ['R$ 20,80', 'R$ 18,80'],
+      ['R$ 16,50', 'R$ 22,00'],
+      ['R$ 18,00', 'R$ 14,50'],
+      ['R$ 18,80', 'R$ 9,00'],
+      ['R$ 22,50', 'R$ 22,50'],
     ],
   };
 

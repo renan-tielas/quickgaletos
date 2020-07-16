@@ -37,8 +37,15 @@ const PreviaCardapio = () => {
 
       <div className="cont-entregas">
         <div className="titulo-entrega">Entregas</div>
+        <div className="entregas"> 
         <div className="previaEntregas">
-          <div className="texto-entregas"> Nosso número é 2541-2897 <br/> Faça seu pedido com o atendente <br/> A taxa de entrega é de R$ 6,00</div>
+          <div className="texto-entregas"> Ligue ou peça pelo whatsapp: 2541-2897 <br/> <br/>  Entregamos sem taxa em Copacabana e Leme. Para Ipanema, Botafogo, Humaitá e Urca a taxa de entrega é de R$ 6,00</div>
+        </div>
+        <div className="botaoEntrega"> 
+        
+        <div className="logo-zap"></div>  
+        Whatsapp
+        </div>
         </div>
       </div>
     </div>

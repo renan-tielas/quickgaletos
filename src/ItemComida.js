@@ -10,7 +10,9 @@ return (
     <div className="cont-comida">
     <img className="img-comida" 
     src={require(`./arquivos/${props.arq}`)} 
+    // src={require(`./arquivos/galeto.jpg`)} 
     alt={props.nome} />
+    {/* <div className="img-comida"> </div> */}
     </div>
     <span className="preco-comida">{props.preco}</span>
     </div>

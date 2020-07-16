@@ -197,17 +197,19 @@ body {
 }
 
 .postComidas {
+  /* border: pink 2px solid; */
   color: #fff;
   width: 50%;
-  height: 100%;
+  height: inherit;
+  min-height: 100%;
   /* border:green solid 3px; */
-  display: flex;
+  /* display: flex; */
   /* flex-direction: column; */
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 3% 97%;
-  align-self: center;
-  justify-self: center;
+  /* align-self: stretch; */
+  /* justify-self: center; */
   /* border: red solid 2px; */
 }
 
@@ -232,7 +234,7 @@ body {
 .troca-pag button {
   border-radius: 3px;
   font-weight: 600;
-
+  height:1.4rem;
   font-size: 0.8rem;
   color: #fff;
   background: #a12101;
@@ -259,11 +261,16 @@ body {
 
 .comidas {
   /* border: red solid 2px; */
+ 
   align-self: center;
   justify-self: center;
   left: 10%;
   width: 90%;
+  min-width: 90%;
+  max-width:90%;
   height: 85%;
+  min-height: 85%;
+  max-height: 85%;
 
   /* border:rgb(238, 233, 163) solid 3px; */
   border-radius: 6px;
@@ -278,6 +285,7 @@ body {
   background-color: #bfd1e2;
 
   padding: 0 0.25rem 1rem;
+
 }
 
 .item-comida {
@@ -299,15 +307,20 @@ body {
 .img-comida {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
-  width: 90%;
-  height: 96%;
+  width: 11rem;
+  height: 11rem;
+  /* width: inherit;
+  height: inherit; */
+  /* min-width: 90%;
+  min-height: 96%; */
   max-width: 13rem;
-  max-height: 96%;
+  /* max-height: 96%; */
   border-radius: 6px;
   z-index: 0;
   /* border-bottom-left-radius:6px ;
   border-bottom-right-radius:6px ; */
   /* border:red solid 2px; */
+  object-fit: cover;
 }
 .nome-comida {
   font-family: initial;
@@ -337,11 +350,12 @@ body {
   color: #000;
   border-radius: 3px;
   position: absolute;
-  left: 60%;
+  /* left: 60%; */
+  left:55%;
   padding: 0.05rem 0;
   min-width: 35%;
   /* max-height: 1rem; */
-  top: 2.5rem;
+  top: 2.8rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
   border-radius: 3px;
 }
@@ -455,19 +469,24 @@ body {
 .cont-entregas {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  height: auto;
- 
-  /* border: green 3px solid; */
-  padding-top: 10%;
-  display: grid;
+  height: auto; */
+  width: 110%;
+  border: red 3px solid;
+  position: relative;
+  left:-1.5rem;
+  padding-top: 6%;
+  /* padding-right: 2rem; */
+  /* display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 5% 90%;
+  grid-template-rows: 10% 85%; */
+  /* overflow: auto; */
 }
 
 .titulo-entrega {
   /* margin-top: 1rem; */
+  display: block;
   font-weight: 1000;
   font-family: sans-serif;
   font-size: 1rem;
@@ -478,15 +497,28 @@ body {
   /* position: relative; */
   /* top:120%; */
   align-self: center;
+  margin-bottom: 0.8rem;
   justify-self: center;
   /* border: green solid 2px; */
   /* top:; */
 }
 
+.entregas {
+  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: green 2px solid; */
+
+}
+
 .previaEntregas {
   float: left;
   /* border: green solid 2px; */
-  height: 40%;
+  
+  min-height: 8rem;
+  max-height: 75%;
+  /* max-height: 75%; */
+  max-width: 70%;
   /* margin-top: 1rem; */
   border-radius: 6px;
   margin-top: 0rem;
@@ -497,15 +529,59 @@ body {
   width: auto;
 }
 
+
+
 .texto-entregas {
   color: #000;
   text-align: start;
   padding-left: 0.3rem;
 
   padding: 0.8rem;
-
+  font-size: 1.1rem;
   font-weight: 700;
+  text-align: justify;
 }
+
+
+.botaoEntrega {
+  min-width: 5rem;
+  min-height: 8rem;
+  max-height: 75%;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+  /* background: #800000; */
+  background-color: #a00707;
+  border-radius: 3px;
+
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 1000;
+  /* font-size: 1.1rem ; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+}
+
+.botaoEntrega:hover {
+  background: #cf2525;
+}
+
+.logo-zap{
+  margin: 1rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+  padding:0.2rem;
+  padding-bottom: 4rem;
+  /* border:green solid 2px; */
+  background-image:url(./arquivos/whatsapp-logo.png);
+  background-size: cover;
+}
+
+
+
 .troca-pag {
   font-weight: 650;
   font-size: 0.8rem;
@@ -529,8 +605,8 @@ body {
   cursor: pointer;
 }
 
-/* VERSAO CELULAR ___________________*/
 
+/*FOOTER*/
 
 .div_footer {
   display: block;
@@ -545,10 +621,57 @@ body {
   float: right;
 }
 
+.botoes_footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.6rem;
+
+}
+
+.botao_footer {
+  width: 15%;
+  height: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+  margin-left: 6rem;
+  margin-right: 6rem;
+  /* background: #800000; */
+  background-color: #a00707;
+  border-radius: 3px;
+
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 1000;
+  /* font-size: 1.1rem ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #ffffff;
+}
+
+.botao_footer:hover {
+  background: #cf2525;
+}
+
+
+
+
+/* VERSAO CELULAR ___________________*/
+
+
+
 @media screen and (max-width: 1000px) {
   .previaCardapio {
     height: 150%;
   }
+  .img-comida{
+
+  max-width: 9rem;
+  max-height: 9rem;
+  }
+  ]
   .preco-comida {
     top: 2rem;
     /* min-height: 2rem; */
@@ -558,14 +681,28 @@ body {
 @media screen and (max-width: 900px) {
   .main_div {
     flex-direction: column;
+    /* height: 60rem; */
   }
 
   .postComidas {
     width: 100%;
+      /* border: pink 2px solid; */
+
+      width: 90%;
+      height: auto;
+  
+    align-self: center;
   }
+
+  .img-comida{
+
+    max-width: 11rem;
+    max-height: 11rem;
+    }
   .postCardapioEntregas {
+    display: block;
     width: 90%;
-    
+    height: auto;
     display: flex;
     flex-direction: column;
   }
@@ -575,10 +712,13 @@ body {
     align-self: center;
     justify-self: center;
     text-align: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    
   }
   .previaCardapio {
     height: 140%;
+    height:auto;
+   
   }
   .cont-post-cardapio {
   margin-top: -1rem;
@@ -593,7 +733,10 @@ body {
     grid-template-rows: 5% 70%;
     padding-top: 0;
   }
+
 }
+
+
 
 @media screen and (max-width: 700px) {
   .botao {
