@@ -1,0 +1,201 @@
+:root {
+  font-size: 125%;
+  /* 20px */
+}
+
+a {
+  text-decoration: none;
+}
+a :hover {
+  background: #cc4242;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Ruluko'; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+
+  background: #ffffff;
+}
+
+.logo {
+  background-image: url(../arquivos/logo.png);
+  background-position: center;
+  background-size: 24rem 18rem;
+  padding: 2rem 0 6rem;
+  background-repeat: no-repeat;
+
+  /* left:50%;
+  align-self: center;
+  justify-self: center; */
+  /* border: greenyellow 2px solid; */
+}
+
+.imagens-logo {
+  display: flex;
+}
+
+.img-logo {
+  position: relative;
+
+  top: -13rem;
+  background-image: url(../arquivos/foto-2.jpg);
+  background-position: initial;
+  background-size: 100% auto;
+  padding: 50% 0;
+  width: 49%;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  /* border: red solid 4px; */
+}
+
+.img-logo2 {
+  position: relative;
+
+  top: -11rem;
+  /* left:42%; */
+  background-image: url(../arquivos/foto-1.jpg);
+  background-position: initial;
+  background-size: 120% auto;
+  padding: 50% 0;
+  width: 51%;
+  min-width: 50%;
+  height: auto;
+  background-repeat: no-repeat;
+  z-index: -2;
+  /* border: green solid 4px; */
+}
+
+.navegacao {
+  position: absolute;
+  width: 100%;
+  height: 4.1rem;
+
+  top: 8rem;
+
+  background: #013567;
+  border-radius: 3px;
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.botao {
+  width: 15%;
+  height: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+
+  /* background: #800000; */
+  background-color: #a00707;
+  border-radius: 3px;
+
+  /* texto*/
+
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 1000;
+  /* font-size: 1.1rem ; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.botao:hover {
+  background: #cf2525;
+}
+
+.main_div {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  background: #013567;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: yellow 4px solid; */
+}
+
+.troca_pag {
+  margin-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-weight: 650;
+  font-size: 1rem;
+  color: white;
+  position: relative;
+  top: 3%;
+  margin-bottom: 0.8rem;
+}
+
+.troca_pag button {
+  border-radius: 3px;
+  font-weight: 600;
+
+  font-size: 0.8rem;
+  color: #fff;
+  background: #a12101;
+
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+}
+
+.troca_pag button:hover {
+  transform: scale(0.97);
+  background: #cf2525;
+  cursor: pointer;
+}
+
+
+.titulo-comida-pedido{
+  width: 15%;
+  height: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+
+  /* background: #800000; */
+  background-color: #a00707;
+  border-radius: 3px;
+
+  /* texto*/
+
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 1000;
+  /* font-size: 1.1rem ; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  
+
+  .cont_cardapio {
+    height: 25rem;
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .previaCardapio2 {
+    
+    width: 115%;
+    height: 150%;
+    position: relative;
+    right:-1rem;
+
+  }
+}

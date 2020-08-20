@@ -39,7 +39,7 @@ const PreviaCardapio = () => {
         <div className="titulo-entrega">Entregas</div>
         <div className="entregas"> 
         <div className="previaEntregas">
-          <div className="texto-entregas"> Ligue ou peça pelo whatsapp: 2541-2897 <br/> <br/>  Entregamos sem taxa em Copacabana e Leme. Para Ipanema, Botafogo, Humaitá e Urca a taxa de entrega é de R$ 6,00</div>
+          <div className="texto-entregas"> Ligue ou peça pelo whatsapp: 2541-2897 <br/> <br/>  Entregamos sem taxa em Copacabana e Leme.<br/> <br/> Para Ipanema, Botafogo, Humaitá e Urca a taxa de entrega é de R$ 6,00</div>
         </div>
         <div className="botaoEntrega"> 
         
