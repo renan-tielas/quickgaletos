@@ -1,0 +1,117 @@
+
+  .div_topo {
+    display: flex;
+    flex-direction: column;
+    /* float: left; */
+    /* border: magenta 4px solid; */
+    /* z-index: 15; */
+  
+    min-height: 13rem;
+    overflow: hidden;
+  }
+  
+  .cabecalho {
+    display: block;
+    max-height: 8rem;
+  }
+  
+  .logo {
+    background-image: url(./arquivos/logo.png);
+    background-position: center;
+    background-size: 24rem 18rem;
+    padding: 2rem 0 6rem;
+    background-repeat: no-repeat;
+  
+    /* left:50%;
+    align-self: center;
+    justify-self: center; */
+    /* border: greenyellow 2px solid; */
+  }
+  
+  .imagens-logo {
+    /* display: block; */
+    display: flex;
+    height: 12rem;
+    flex-direction: column;
+    /* border: lawngreen 8px solid; */
+  }
+  
+  .img-logo {
+    position: relative;
+  
+    top: -13rem;
+    background-image: url(./arquivos/foto-2.jpg);
+    background-position: initial;
+    background-size: 100% auto;
+    padding: 50% 0;
+    width: 49%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    max-height: 20rem;
+    /* border: red solid 4px; */
+  }
+  .img-logo2 {
+    position: relative;
+  
+    top: -11rem;
+    /* left:42%; */
+    background-image: url(./arquivos/foto-1.jpg);
+    background-position: initial;
+    background-size: 120% auto;
+    padding: 50% 0;
+    width: 51%;
+    min-width: 50%;
+    /* height: auto; */
+    max-height: 20rem;
+    background-repeat: no-repeat;
+    z-index: -1;
+    /* border: green solid 4px; */
+  }
+  .img-logo3 {
+    position: relative;
+  
+    top: -26rem;
+    /* top  :-120%; */
+    left: 0rem;
+    background-image: url(./arquivos/foto-1.jpg);
+    background-position: initial;
+    background-size: auto 120%;
+    padding: 30% 30%;
+    width: 120%;
+    min-width: 50%;
+    /* min-height: 25%; */
+    height: 0;
+    background-repeat: repeat;
+    z-index: -2;
+    /* border: green solid 4px;  */
+  }
+  
+  /* .img-logo3{
+    position: relative;
+    left:10rem;
+    top: -20rem;
+    background-image: url(./arquivos/foto-1.jpg);
+    background-position:initial;
+    background-size: 20% auto;
+    padding: 200% 200%;
+    width: 200%;
+    background-repeat: no-repeat;
+    z-index: -1;
+  
+  } */
+  
+  .navegacao {
+    display: block;
+    /* position: absolute; */
+    width: 100%;
+    height: 4.1rem;
+  
+    /* top: 8rem; */
+  
+    background: #013567;
+    border-radius: 3px;
+    display: flex;
+    /* border: red 4px solid; */
+    justify-content: space-evenly;
+    align-items: center;
+  }

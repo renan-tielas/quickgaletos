@@ -1,0 +1,126 @@
+
+  
+  .botao {
+    width: 15%;
+    height: 2.5rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+  
+    /* background: #800000; */
+    background-color: #a00707;
+    border-radius: 3px;
+  
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 1000;
+    /* font-size: 1.1rem ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .botao:hover {
+    background: #cf2525;
+  }
+
+  
+  .troca-pag {
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    top: 100%;
+    font-weight: 650;
+    font-size: 0.8rem;
+  
+    display: grid;
+    text-align: center;
+  
+    grid-row-gap: 0.2rem;
+    grid-template-columns: 15% 80% 15%;
+    grid-template-rows: auto;
+  
+    /* border: red solid 2px; */
+  }
+  
+  .troca-pag button {
+    border-radius: 3px;
+    font-weight: 600;
+  
+    font-size: 0.8rem;
+    color: #fff;
+    background: #a12101;
+  
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+  }
+  
+  .troca-pag button:hover {
+    transform: scale(0.97);
+    background: #cf2525;
+    cursor: pointer;
+  }
+
+
+  
+  .troca-pag2 {
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    top: 20%;
+    font-weight: 650;
+    font-size: 0.8rem;
+  
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-row-gap: 0.2rem;
+    grid-template-columns: 15% 80% 15%;
+    grid-template-rows: auto;
+  
+    /* border: red solid 2px; */
+  }
+  
+  .troca-pag2 button {
+    border-radius: 3px;
+    font-weight: 600;
+    align-self: center;
+    justify-self: center;
+    font-size: 0.8rem;
+    color: #fff;
+    background: #a12101;
+  
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+  }
+  
+  .troca-pag2 button:hover {
+    transform: scale(0.97);
+    background: #cf2525;
+    cursor: pointer;
+  }
+
+  
+  .troca-pag {
+    font-weight: 650;
+    font-size: 0.8rem;
+  }
+  
+  .troca-pag button {
+    border-radius: 3px;
+    font-weight: 600;
+  
+    font-size: 0.8rem;
+    color: #fff;
+    background: #a12101;
+  
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+  }
+  
+  .troca-pag button:hover {
+    transform: scale(0.97);
+    background: #cf2525;
+    cursor: pointer;
+  }
