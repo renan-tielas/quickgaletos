@@ -22,11 +22,11 @@ const Pedido = (props) => {
 
       <CategoriaPedido titulo="Mais Pedidos" numero_ped="5" comidas={["galeto", "espetinho vegetariano","churrasqueto","salada","farofa de ovos"]}>
       </CategoriaPedido>
-      <CategoriaPedido titulo="Mais Pedidos" numero_ped="4" comidas={["galeto", "espetinho vegetariano","churrasqueto"]}>
+      <CategoriaPedido titulo="Carnes" numero_ped="4" comidas={["galeto", "espetinho vegetariano","churrasqueto"]}>
       </CategoriaPedido>
-      <CategoriaPedido titulo="Mais Pedidos" numero_ped="3" comidas={["galeto", "espetinho vegetariano","salada","farofa de ovos"]}>
+      <CategoriaPedido titulo="Vegetariano" numero_ped="3" comidas={["galeto", "espetinho vegetariano","salada","farofa de ovos"]}>
       </CategoriaPedido>
-      <CategoriaPedido titulo="Mais Pedidos" numero_ped="8" comidas={["galeto","galeto","galeto", "espetinho vegetariano","churrasqueto","salada","farofa de ovos"]}>
+      <CategoriaPedido titulo="Guarnições" numero_ped="8" comidas={["galeto","galeto","galeto", "espetinho vegetariano","churrasqueto","salada","farofa de ovos"]}>
       </CategoriaPedido>
 
 

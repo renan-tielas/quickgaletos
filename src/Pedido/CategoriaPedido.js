@@ -8,15 +8,9 @@ const CategoriaPedido = (props) => {
   return (
         
     <div className={estilo.categoria_comida_pedido}>
-{props.comidas.map((comida, i) => <ItemPedido texto={comida} key={i} />)}
-  
-        
+      <div   className={estilo.titulo_categoria_pedido} > {props.titulo}</div>
+      {props.comidas.map((comida, i) => <ItemPedido texto={comida} key={i} />)}
 
-{/*           '
-          <ItemPedido texto={props.comidas[1]}/>
-          <ItemPedido texto={props.comidas[2]}/>
-          <ItemPedido texto={props.comidas[3]}/>
-          <ItemPedido texto={props.comidas[4]}/> */}
     </div>
 
   );

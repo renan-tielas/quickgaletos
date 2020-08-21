@@ -164,7 +164,7 @@ body {
 
 .main_div_pedido {
 
-  padding : 1.5rem 2rem;
+  /* padding : 1rem 1rem; */
   display: block;
 /* border: pink solid 10px; */
   width: 100%;
@@ -173,7 +173,8 @@ body {
   height: auto;
 
   background: #2566a3;
-  background:#873232;
+  /* background:#873232; */
+  /* background:#c27474b6; */
 
   display: flex;
   justify-content: space-around;
@@ -218,7 +219,9 @@ body {
   cursor: pointer;
 
   background-color: #a00707;
-  background-color: #fff;
+  background-color: #a00707;
+  /* background-color: #fff; */
+  /* background:#873232; */
   border-radius: 3px;
 
   font-family: sans-serif;
@@ -229,12 +232,22 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-shadow: 4px 4px 8px rgba(26, 26, 26, 0.57);
 
 }
-
+.titulo_categoria_pedido{
+font-size: 1.1rem;
+font-weight: 800;
+justify-self: center;
+/* box-shadow: 1px 1px 40px rgba(243, 216, 142, 0.57); */
+/* background-color: #fff6d6c2;  */
+padding: 0.1rem 0.4rem;
+/* border-radius: 40rem; */
+}
 .categoria_comida_pedido{
 
 border: rgb(247, 250, 217) solid 5px;
+border-radius: 0.8em;
 padding:1rem 1rem;
 color: #fff;
 display: grid;
@@ -243,13 +256,19 @@ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   /* This is better for small screens, once min() is better supported */
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
   grid-gap: 1rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.57);
 }
 
 
 .titulo_comida_pedido{
   /* border: green solid 2px;   */
   background-color: #a00707;
+  /* background-color: #ec9898; */
+  background:#9b1515;
+  /* COR BOA COM AZUL CLARO */
+  /* background:#a81b1b; */
   width: 100%;
+  padding: 0px 10px;
 }
 
 .comida_pedido{
