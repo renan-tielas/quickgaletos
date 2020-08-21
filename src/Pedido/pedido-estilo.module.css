@@ -11,13 +11,38 @@ a :hover {
 }
 
 body {
-  margin: 0;
+  /* margin: 0; */
   /* font-family: -apple-system, BlinkMacSystemFont, 'Ruluko'; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: sans-serif;
 
   background: #ffffff;
+
+}
+
+.div_Inicio {
+  height: auto;
+  /* display: grid;
+  grid-template-rows: 20% 70% 10%;
+  grid-template-columns: 100%; */
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  float: inline-start;
+}
+
+
+
+.div_topo {
+  display: flex;
+  flex-direction: column;
+  /* float: left; */
+  /* border: magenta 4px solid; */
+  /* z-index: 15; */
+
+  min-height: 13rem;
+  overflow: hidden;
 }
 
 .logo {
@@ -32,6 +57,13 @@ body {
   justify-self: center; */
   /* border: greenyellow 2px solid; */
 }
+
+
+.cabecalho {
+  display: block;
+  max-height: 8rem;
+}
+
 
 .imagens-logo {
   display: flex;
@@ -69,8 +101,27 @@ body {
   /* border: green solid 4px; */
 }
 
+.img-logo3 {
+  position: relative;
+
+  top: -26rem;
+  /* top  :-120%; */
+  left: 0rem;
+  /* background-image: url(./arquivos/foto-1.jpg); */
+  background-position: initial;
+  background-size: auto 120%;
+  padding: 30% 30%;
+  width: 120%;
+  min-width: 50%;
+  /* min-height: 25%; */
+  height: 0;
+  background-repeat: repeat;
+  z-index: -2;
+  /* border: green solid 4px;  */
+}
+
 .navegacao {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 4.1rem;
 
@@ -111,17 +162,21 @@ body {
   background: #cf2525;
 }
 
-.main_div {
-  display: block;
+.main_div_pedido {
 
+  padding : 1.5rem 2rem;
+  display: block;
+/* border: pink solid 10px; */
   width: 100%;
+  max-width: 100%;
 
   height: auto;
 
-  background: #013567;
+  background: #2566a3;
+  background:#873232;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   /* border: yellow 4px solid; */
@@ -163,11 +218,12 @@ body {
   cursor: pointer;
 
   background-color: #a00707;
+  background-color: #fff;
   border-radius: 3px;
 
   font-family: sans-serif;
   font-size: 1rem;
-  font-weight: 1000;
+  font-weight: 550;
   /* font-size: 1.1rem ; */
   display: flex;
   align-items: center;
@@ -177,9 +233,9 @@ body {
 }
 
 .categoria_comida_pedido{
-background-color: #a00707;
-border: white solid 2px;
-padding:auto;
+
+border: rgb(247, 250, 217) solid 5px;
+padding:1rem 1rem;
 color: #fff;
 display: grid;
 
@@ -191,15 +247,67 @@ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
 
 .titulo_comida_pedido{
-  border: green solid 2px;  
+  /* border: green solid 2px;   */
+  background-color: #a00707;
   width: 100%;
 }
 
 .comida_pedido{
-  border: red solid 2px;
+  /* border: red solid 2px; */
   display:flex;
   flex-direction: row;
 }
+
+.div_footer {
+  display: block;
+  background: #800000;
+  width: 100%;
+  height: auto;
+  /* max-height: 10rem; */
+  /* position: relative; */
+
+  text-align: center;
+  color: white;
+  float: right;
+}
+
+.botoes_footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 2rem;
+  font-size: 0.6rem;
+
+}
+
+.botao_footer {
+  width: 15%;
+  height: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.57);
+  margin-left: 6rem;
+  margin-right: 6rem;
+  /* background: #800000; */
+  background-color: #a00707;
+  border-radius: 3px;
+
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 1000;
+  /* font-size: 1.1rem ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #ffffff;
+}
+
+.botao_footer:hover {
+  background: #cf2525;
+}
+
+
+
 
 
 @media screen and (max-width: 900px) {
@@ -209,7 +317,7 @@ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     height: 25rem;
     width: 90%;
   }
-}
+} 
 
 
 @media screen and (max-width: 600px) {
