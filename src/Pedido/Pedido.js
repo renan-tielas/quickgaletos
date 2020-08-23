@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from "react";
-import ItemPedido from "./ItemPedido"
 import Cabecalho from "../Cabecalho";
 import Navegacao from "../Navegacao";
 import estilo from "./pedido-estilo.module.css";
 import Footer from "../Footer";
 import CategoriaPedido from './CategoriaPedido'
+import Comidas from '../Comidas'
+
 const Pedido = (props) => {
   return (
 
@@ -26,7 +26,7 @@ const Pedido = (props) => {
       </CategoriaPedido>
       <CategoriaPedido titulo="Vegetariano" numero_ped="3" comidas={["galeto", "espetinho vegetariano","salada","farofa de ovos"]}>
       </CategoriaPedido>
-      <CategoriaPedido titulo="Guarnições" numero_ped="8" comidas={["galeto","galeto","galeto", "espetinho vegetariano","churrasqueto","salada","farofa de ovos"]}>
+      <CategoriaPedido titulo="Guarnições" numero_ped="8" comidas={[<Comidas></Comidas>,"galeto", "espetinho vegetariano","churrasqueto","salada","farofa de ovos"]}>
       </CategoriaPedido>
 
 

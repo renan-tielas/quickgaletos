@@ -43,7 +43,7 @@ const PreviaCardapio = () => {
         </div>
         <div className="botaoEntrega"> 
         
-        <a href="http://wa.me/552125412897" className="logo-zap"></a>  
+        <a href="http://wa.me/552125412897" alt="zap" className="logo-zap"></a>  
         Whatsapp
         </div>
         </div>
