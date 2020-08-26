@@ -42,8 +42,8 @@ body {
 }
 
 .cabecalho {
-  display: block;
-  max-height: 8rem;
+  /* display: block; */
+  /* max-height: 8rem; */
 }
 
 .logo {
@@ -52,21 +52,48 @@ body {
   background-size: 24rem 18rem;
   padding: 2rem 0 6rem;
   background-repeat: no-repeat;
-
+  z-index: 1;
   /* left:50%;
   align-self: center;
   justify-self: center; */
-  /* border: greenyellow 2px solid; */
+  /* border: red 2px solid; */
+  position: relative;
 }
 
-.imagens-logo {
+.imagens-fundo {
   /* display: block; */
-  display: flex;
-  height: 12rem;
-  flex-direction: column;
+  /* display: flex; */
+  max-height: 12rem;
+  
+  /* flex-direction: column; */
   /* border: lawngreen 8px solid; */
 }
 
+.img-fundo {
+  /* position: relative; */
+  min-width:50rem;
+  height:10rem;
+  padding: 100%;
+  /* top: -13rem; */
+  background-image: url(./arquivos/tijolos.jpg);
+  /* background-image: url(./arquivos/foto-1.jpg); */
+  background-position: center;
+  background-size: 60%;
+  background-position-x:left;
+  /* border: green solid 5px; */
+  /* background-size: 100% auto; */
+  /* padding: 50% 0; */
+  /* width: 49%; */
+  position: relative;
+  top:-5rem;
+  left:-8rem;
+  background-repeat: no-repeat;
+  z-index: -1;
+  max-height: 20rem;
+  /* border: red solid 4px; */
+  object-fit: contain;
+}
+/* 
 .img-logo {
   position: relative;
 
@@ -79,43 +106,7 @@ body {
   background-repeat: no-repeat;
   z-index: -1;
   max-height: 20rem;
-  /* border: red solid 4px; */
-}
-.img-logo2 {
-  position: relative;
-
-  top: -11rem;
-  /* left:42%; */
-  background-image: url(./arquivos/foto-1.jpg);
-  background-position: initial;
-  background-size: 120% auto;
-  padding: 50% 0;
-  width: 51%;
-  min-width: 50%;
-  /* height: auto; */
-  max-height: 20rem;
-  background-repeat: no-repeat;
-  z-index: -1;
-  /* border: green solid 4px; */
-}
-.img-logo3 {
-  position: relative;
-
-  top: -26rem;
-  /* top  :-120%; */
-  left: 0rem;
-  background-image: url(./arquivos/foto-1.jpg);
-  background-position: initial;
-  background-size: auto 120%;
-  padding: 30% 30%;
-  width: 120%;
-  min-width: 50%;
-  /* min-height: 25%; */
-  height: 0;
-  background-repeat: repeat;
-  z-index: -2;
-  /* border: green solid 4px;  */
-}
+  border: red solid 4px; */
 
 /* .img-logo3{
   position: relative;

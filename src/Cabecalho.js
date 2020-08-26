@@ -4,12 +4,8 @@ const Cabecalho = () => {
   return (
     <div className="cabecalho">
       <div className="logo"></div>
-      <div className="imagens-logo">
-        {/* <span className="img-logo"></span>
-        <span className="img-logo2"></span> */}
-        <span className="img-logo3"></span>
-        <span className="img-logo3"></span>
-        <span className="img-logo3"></span>
+      <div className="imagens-fundo">
+        <span className="img-fundo"></span>
       </div>
     </div>
   );

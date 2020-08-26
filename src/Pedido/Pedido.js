@@ -6,7 +6,88 @@ import Footer from "../Footer";
 import CategoriaPedido from './CategoriaPedido'
 import Comidas from '../Comidas'
 
+
+const cardapio = {
+  principais:{
+  galeto : {
+    codigo: 80,
+    nome: "galeto",
+    preco: 25.80
+  },
+
+  filet : {
+    codigo: 81,
+     nome: "Filet Mignon",
+     preco: 80
+   },
+   "filet-quick" : {
+    codigo: 82,
+     nome: "Filet Mignon Quick Galetos",
+     preco: 86
+   },
+   "contra-filet" : {
+    codigo: 83,
+     nome: "Contra Filet",
+     preco: 59
+   },
+    churrasqueto : {
+      codigo: 83,
+       nome: "churrasqueto",
+       preco: 39
+     },
+     "churrasco-misto" : {
+      codigo: 84,
+       nome: "Churrasco Misto",
+       preco: 84
+     },
+     lombo : {
+      codigo: 85,
+       nome: "Lombo de Porco",
+       preco: 39
+     },
+     linguiça : {
+      codigo: 86,
+       nome: "churrasqueto",
+       preco: 15
+     },
+     "linguiça-unidade" : {
+      codigo: 87,
+       nome: "churrasqueto",
+       preco: 5
+     },
+     "espeto-vegetariano" : {
+      codigo:18,
+       nome: "Espeto Vegetariano",
+       descricao:"Abobrinha Berinjela, Tomate e Cebola assadas na brasa com o tempero Quick Galetos",
+       preco: 18
+     },
+     "legumes-cozidos" : {
+     codigo: 89,
+      nome: "Legumes Cozidos",
+      preco: 18.80
+    },
+    "salada-maionese" : {
+      codigo: 86,
+       nome: "Salada de Maionese",
+       preco: 22.80    },
+       "salada-palmito" : {
+        codigo: 86,
+         nome: "Salada de Maionese",
+         preco: 32    },
+         "caldo-verde" : {
+          codigo: 86,
+           nome: "Salada de Maionese",
+           preco: 17    },
+
+  }
+
+};
+
+
+
 const Pedido = (props) => {
+
+
   return (
 
   
@@ -20,14 +101,11 @@ const Pedido = (props) => {
       <div className={estilo.main_div_pedido}>
 
 
-      <CategoriaPedido titulo="Mais Pedidos" numero_ped="5" comidas={["galeto", "espetinho vegetariano","churrasqueto","salada","farofa de ovos"]}>
+      <CategoriaPedido titulo="Carnes" comidas={cardapio.principais.galeto.nome}>
       </CategoriaPedido>
-      <CategoriaPedido titulo="Carnes" numero_ped="4" comidas={["galeto", "espetinho vegetariano","churrasqueto"]}>
+      <CategoriaPedido titulo="Vegetais" comidas={["galeto", "espetinho vegetariano","churrasqueto"]}>
       </CategoriaPedido>
-      <CategoriaPedido titulo="Vegetariano" numero_ped="3" comidas={["galeto", "espetinho vegetariano","salada","farofa de ovos"]}>
-      </CategoriaPedido>
-      <CategoriaPedido titulo="Guarnições" numero_ped="8" comidas={[<Comidas></Comidas>,"galeto", "espetinho vegetariano","churrasqueto","salada","farofa de ovos"]}>
-      </CategoriaPedido>
+     
 
 
     </div>
