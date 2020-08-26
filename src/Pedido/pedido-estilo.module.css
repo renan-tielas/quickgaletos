@@ -218,7 +218,7 @@ body {
   height: 2.5rem;
   cursor: pointer;
 
-  background-color: #a00707;
+
   background-color: #a00707;
   /* background-color: #fff; */
   /* background:#873232; */
@@ -235,6 +235,22 @@ body {
   box-shadow: 4px 4px 8px rgba(26, 26, 26, 0.57);
 
 }
+
+.mais_comida_pedido{
+  /* border: green solid 2px;   */
+  background-color: #a00707;
+  /* background-color: #ec9898; */
+  background:#9b1515;
+  border-radius: 6px;
+  /* COR BOA COM AZUL CLARO */
+  
+  /* background:#a81b1b; */
+  width: 5%;
+  padding: 0px 10px;
+  height: 30%;
+}
+
+
 .titulo_categoria_pedido{
 font-size: 1.1rem;
 font-weight: 800;
@@ -267,14 +283,17 @@ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   background:#9b1515;
   /* COR BOA COM AZUL CLARO */
   /* background:#a81b1b; */
-  width: 100%;
+  width: 70%;
   padding: 0px 10px;
 }
+
+
 
 .comida_pedido{
   /* border: red solid 2px; */
   display:flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .div_footer {

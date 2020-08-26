@@ -15,6 +15,7 @@ const ItemPedido = (props) => {
       <div className={estilo.comida_pedido}>
             <span className={estilo.titulo_comida_pedido}>  {props.texto}  </span>
             <span className={estilo.mais_comida_pedido}>  +  </span>
+            <span className={estilo.preco_comida_pedido}>  {props.preco} </span>
       </div>
       
     

@@ -4,14 +4,14 @@ import Navegacao from "../Navegacao";
 import estilo from "./pedido-estilo.module.css";
 import Footer from "../Footer";
 import CategoriaPedido from './CategoriaPedido'
-import Comidas from '../Comidas'
+
 
 
 const cardapio = {
-  principais:{
+  carnes:{
   galeto : {
     codigo: 80,
-    nome: "galeto",
+    nome: "Galeto",
     preco: 25.80
   },
 
@@ -32,7 +32,7 @@ const cardapio = {
    },
     churrasqueto : {
       codigo: 83,
-       nome: "churrasqueto",
+       nome: "Churrasqueto",
        preco: 39
      },
      "churrasco-misto" : {
@@ -47,14 +47,17 @@ const cardapio = {
      },
      linguiça : {
       codigo: 86,
-       nome: "churrasqueto",
+       nome: "Porção de Linguiça",
        preco: 15
      },
      "linguiça-unidade" : {
       codigo: 87,
-       nome: "churrasqueto",
+       nome: "Linguiça",
        preco: 5
      },
+    },
+
+    vegetais:{
      "espeto-vegetariano" : {
       codigo:18,
        nome: "Espeto Vegetariano",
@@ -72,18 +75,53 @@ const cardapio = {
        preco: 22.80    },
        "salada-palmito" : {
         codigo: 86,
-         nome: "Salada de Maionese",
+         nome: "Salada de Palmito",
          preco: 32    },
          "caldo-verde" : {
           codigo: 86,
-           nome: "Salada de Maionese",
+           nome: "Caldo Verde",
            preco: 17    },
 
-  }
+      }
 
 };
+  let carnesNomes = [];
+  let vegetaisNomes =[];
 
+for (const [key, value] of Object.entries(cardapio.carnes)) {
+  
 
+  carnesNomes.push(cardapio.carnes[key].nome);
+  
+  // console.log(key, value);
+}
+
+for (const [key, value] of Object.entries(cardapio.vegetais)) {
+  
+
+  vegetaisNomes.push(cardapio.vegetais[key].nome);
+  
+  // console.log(key, value);
+}
+
+let carnesPrecos = [];
+let vegetaisPrecos = [];
+
+for (const [key, value] of Object.entries(cardapio.carnes)) {
+  
+
+  carnesPrecos.push(cardapio.carnes[key].preco);
+  
+  // console.log(key, value);
+}
+
+for (const [key, value] of Object.entries(cardapio.vegetais)) {
+  
+
+  vegetaisPrecos.push(cardapio.vegetais[key].preco);
+  
+  // console.log(key, value);
+}
 
 const Pedido = (props) => {
 
@@ -101,11 +139,11 @@ const Pedido = (props) => {
       <div className={estilo.main_div_pedido}>
 
 
-      <CategoriaPedido titulo="Carnes" comidas={cardapio.principais.galeto.nome}>
+      <CategoriaPedido titulo="Carnes"  comidas={carnesNomes} precos={carnesPrecos}>
       </CategoriaPedido>
-      <CategoriaPedido titulo="Vegetais" comidas={["galeto", "espetinho vegetariano","churrasqueto"]}>
+      <CategoriaPedido titulo="Vegetais" comidas={vegetaisNomes} precos={vegetaisPrecos}>
       </CategoriaPedido>
-     
+      {/* comidas={cardapio.carnes.galeto.nome,cardapio.carnes.churrasqueto.nome} */}
 
 
     </div>
