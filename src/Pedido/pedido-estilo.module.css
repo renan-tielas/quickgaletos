@@ -345,7 +345,18 @@ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 
+.carta_pedido {
+  display: grid;
+  grid-template-rows: 90%;
+  grid-template-columns:30% 60% ;
+  justify-content: space-around;
+}
 
+.categorias_pedido{
+background: #74a8da;
+background-size: 8% 6%;
+
+}
 
 
 @media screen and (max-width: 900px) {
