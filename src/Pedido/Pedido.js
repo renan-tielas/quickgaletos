@@ -11,41 +11,49 @@ const cardapio = {
     galeto: {
       codigo: 80,
       nome: "Galeto",
-      preco: 25.8,
+      preço: "R$ 25,80",
+      preco: 25.8
     },
 
     filet: {
       codigo: 81,
       nome: "Filet Mignon",
-      preco: 80,
+      preço: "R$ 80,00",
+      preco: 80.00,
     },
     "filet-quick": {
       codigo: 82,
       nome: "Filet Mignon Quick Galetos",
+      preço: "R$ 86,00",
       preco: 86,
     },
     "contra-filet": {
       codigo: 83,
       nome: "Contra Filet",
+      preço: "R$ 59,00",
       preco: 59,
     },
     churrasqueto: {
       codigo: 83,
       nome: "Churrasqueto",
+      preço: "R$ 39,00",
       preco: 39,
     },
     "churrasco-misto": {
       codigo: 84,
       nome: "Churrasco Misto",
+      preço: "R$ 84,00",
       preco: 84,
     },
     lombo: {
       codigo: 85,
       nome: "Lombo de Porco",
+      preço: "R$ 39,00",
       preco: 39,
     },
     linguiça: {
       codigo: 86,
+
       nome: "Porção de Linguiça",
       preco: 15,
     },
@@ -125,25 +133,37 @@ const Pedido = (props) => {
         <Navegacao />
       </div>
 
+
       <div className={estilo.main_div_pedido}>
 
+
         <div className={estilo.carta_pedido}>
+
           <div className={estilo.categorias_pedido}>
+          <CategoriaPedidoTitulo titulo="Mais Pedidos"></CategoriaPedidoTitulo>
             <CategoriaPedidoTitulo titulo="Carnes"></CategoriaPedidoTitulo>
             <CategoriaPedidoTitulo titulo="Vegetais"></CategoriaPedidoTitulo>
+            <CategoriaPedidoTitulo titulo="Acompanhamentos"></CategoriaPedidoTitulo>
+
           </div>
 
-          <div className={estilo.itens_pedido}>
+          <div className={estilo.cont_itens_pedido}>
+
+            <div className="titulo_itens_pedido">
+
+            </div>
+            <div className="itens_pedido">
             <CategoriaPedido
               titulo="Carnes"
               comidas={carnesNomes}
               precos={carnesPrecos}
             ></CategoriaPedido>
-            <CategoriaPedido
+            {/* <CategoriaPedido
               titulo="Vegetais"
               comidas={vegetaisNomes}
               precos={vegetaisPrecos}
-            ></CategoriaPedido>
+            ></CategoriaPedido> */}
+            </div>
           </div>
 
         </div>
