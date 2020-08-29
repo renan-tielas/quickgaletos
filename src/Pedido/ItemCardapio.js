@@ -5,20 +5,21 @@ import estilo from "./pedido-estilo.module.css";
 
 /* entradas: 
 
-de CategoriaPedido:
+de Pedido:
+titulo
 texto={comida}
-preço=preçosArr =map dos preço no Obj cardapio
-key= iteração do map dos nomes das comidas
+preço=
+
 
 */
-const ItemPedido = (props) => {
+const ItemCardapio = (props) => {
 
 
 
   return (
 
      
-     
+
       <div className={estilo.comida_pedido} key="props">
             <span className={estilo.titulo_comida_pedido}>  {props.texto}  </span>
             <span className={estilo.preco_comida_pedido}>  {props.preço} </span>
@@ -31,4 +32,4 @@ const ItemPedido = (props) => {
   );
 };
 
-export default ItemPedido;
+export default ItemCardapio;

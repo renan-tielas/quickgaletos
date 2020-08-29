@@ -3,6 +3,8 @@ import ItemPedido from './ItemPedido'
 import estilo from "./pedido-estilo.module.css";
 
 
+//entradasprops:  titulo
+
 const CategoriaPedidoTitulo = (props) => {
 
   return (
