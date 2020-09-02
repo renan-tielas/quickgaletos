@@ -125,71 +125,93 @@ key= iteração do map dos nomes das comidas
 // };
 
 const CATEGORIASCardapio = ['carnes', 'vegetais']
-const NomesCarnes = ["a","b"]
+const NomesCarnes = ["galeto","churrasqueto","linguica"]
 
 const CATEGORIASMeta = ['codigo','nome','preco','quantidade','preço']
 
 let objetocardapio = {};
 
+const geraCardapio2 = (CATEGORIASCardapio,NomesCarnes) => {
+
+  for (let i = 0; i < CATEGORIASCardapio.length; i++) {
+    objetocardapio[CATEGORIASCardapio[i]]=null;
+
+    for (let j = 0; j < NomesCarnes.length; j++) {
+      let arrCarnes = [];
+      arrCarnes.push = [NomesCarnes[j]];
+      objetocardapio[CATEGORIASCardapio[i]]= arrCarnes  ;
+      
+      for (let y = 0; y < CATEGORIASMeta.length; y++) {
+        
+        let arrMeta = [];
+        arrMeta.push = [CATEGORIASMeta[y]];
+            objetocardapio[CATEGORIASCardapio[i]][NomesCarnes[j]] =  arrMeta;
+              // :"codigo",
+              // "preco":"codigo",
+              // "nome":"codigo",
+              // "quantidade":"codigo",
+              // "preço":"codigo"
+            
+ 
+
+      }
+      return(objetocardapio)}}}
+    
+
+
+      
 const geraCardapio = (CATEGORIASCardapio,NomesCarnes) => {
 
-
-
- 
-  
   for (let i = 0; i < CATEGORIASCardapio.length; i++) {
+    objetocardapio[CATEGORIASCardapio[i]]=null;
     for (let j = 0; j < NomesCarnes.length; j++) {
+
+      objetocardapio[CATEGORIASCardapio[i]]= [NomesCarnes[j]];
       for (let y = 0; y < CATEGORIASMeta.length; y++) {
         
 
-            objetocardapio[CATEGORIASCardapio[i]][NomesCarnes[j]]= 
-            {
-              [CATEGORIASMeta[y]]:"2"
-            }
-            
-        
 
-        }
-      }
-      
+        objetocardapio[CATEGORIASCardapio[i]][NomesCarnes[j]] =  [CATEGORIASMeta[y]];
       
 
-        
-
       }
-    }  
+      }
+    }
+      return(objetocardapio)
+    
+    }
 
 
-
+ objetocardapio=geraCardapio(CATEGORIASCardapio,NomesCarnes);
 let carnesNomes = [];
 let vegetaisNomes = [];
 console.log(objetocardapio)
-for (const [key, value] of Object.entries(objetocardapio.carnes)) {
-  carnesNomes.push(objetocardapio.carnes[key].nome);
+// for (const [key, value] of Object.entries(objetocardapio.carnes)) {
+//   carnesNomes.push(objetocardapio.carnes[key].nome);
 
-   console.log(value);
-}
+//    console.log(value);
+// }
 
-for (const [key, value] of Object.entries(objetocardapio.vegetais)) {
-  vegetaisNomes.push(objetocardapio.vegetais[key].nome);
+// for (const [key, value] of Object.entries(objetocardapio.vegetais)) {
+//   vegetaisNomes.push(objetocardapio.vegetais[key].nome);
 
-  // console.log(key, value);
-}
+//   // console.log(key, value);
+// }
 
 let carnesPrecos = [];
 let vegetaisPrecos = [];
 
-for (const [key, value] of Object.entries(objetocardapio.carnes)) {
-  carnesPrecos.push(objetocardapio.carnes[key].preco);
+// for (const [key, value] of Object.entries(objetocardapio.carnes)) {
+//   carnesPrecos.push(objetocardapio.carnes[key].preco);
 
-  // console.log(key, value);
-}
+//   // console.log(key, value);
+// }
 
-for (const [key, value] of Object.entries(objetocardapio.vegetais)) {
-  vegetaisPrecos.push(objetocardapio.vegetais[key].preco);
+// for (const [key, value] of Object.entries(objetocardapio.vegetais)) {
+//   vegetaisPrecos.push(objetocardapio.vegetais[key].preco);
 
-  // console.log(key, value);
-}
+//   // console.log(key, value);
+// }
 
 
 
@@ -243,6 +265,19 @@ const [quantia, SetQuantia] = useState(0);
 
             </div>
             <div className="itens_pedido">
+              {/* switch (expr) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Mangoes':
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    // expected output: "Mangoes and papayas are $2.79 a pound."
+    break;
+  default:
+    console.log(`Sorry, we are out of ${expr}.`);
+} */}
+
             <CategoriaPedido
               titulo="Carnes"
               comidas={carnesNomes}
