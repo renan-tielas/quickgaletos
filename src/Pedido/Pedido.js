@@ -125,42 +125,43 @@ key= iteração do map dos nomes das comidas
 // };
 
 const CATEGORIASCardapio = ['carnes', 'vegetais']
-const NomesCarnes = ["galeto","churrasqueto","linguica"]
-
-const CATEGORIASMeta = ['codigo','nome','preco','quantidade','preço']
+let galeto, churrasqueto, linguica = 0;
+const NomesCarnes = ['galeto','churrasqueto','linguica']
+let codigo, nome, preco, quantidade, preço = 0;
+const CATEGORIASMeta = {codigo,nome,preco,quantidade,preço}
 
 let objetocardapio = {};
 
-const geraCardapio2 = (CATEGORIASCardapio,NomesCarnes) => {
+const geraCardapio = (CATEGORIASCardapio,NomesCarnes,CATEGORIASMeta) => {
 
-  for (let i = 0; i < CATEGORIASCardapio.length; i++) {
-    objetocardapio[CATEGORIASCardapio[i]]=null;
+  for (let i; i < CATEGORIASCardapio.length; i++) {
 
-    for (let j = 0; j < NomesCarnes.length; j++) {
-      let arrCarnes = [];
-      arrCarnes.push = [NomesCarnes[j]];
-      objetocardapio[CATEGORIASCardapio[i]]= arrCarnes  ;
+    // objetocardapio[CATEGORIASCardapio[i]]=null;
+    objetocardapio[CATEGORIASCardapio[i]]=NomesCarnes;
+   
+
+  for (let j = 0; j < NomesCarnes.length; j++) {
+    objetocardapio.CATEGORIASCardapio[i].NomesCarnes[j] =CATEGORIASMeta;
+      // objetocardapio.CATEGORIASCardapio[i].NomesCarnes[j] ='CATEGORIASMeta';
+      // let arrMeta = [];
+      //  for (let y = 0; y < CATEGORIASMeta.length; y++) {
+        // objetocardapio.CATEGORIASCardapio[i].NomesCarnes[j] =
+        // arrMeta.push = [CATEGORIASMeta[y]];
+    //    "codigo":"codigo",
+    //    "preco":"codigo",
+    //    "nome":"codigo",
+    //    "quantidade":"codigo",
+    //  "preço":"codigo"
       
-      for (let y = 0; y < CATEGORIASMeta.length; y++) {
-        
-        let arrMeta = [];
-        arrMeta.push = [CATEGORIASMeta[y]];
-            objetocardapio[CATEGORIASCardapio[i]][NomesCarnes[j]] =  arrMeta;
-              // :"codigo",
-              // "preco":"codigo",
-              // "nome":"codigo",
-              // "quantidade":"codigo",
-              // "preço":"codigo"
-            
- 
-
       }
-      return(objetocardapio)}}}
-    
+    }
+    return(objetocardapio)
+  }
+
 
 
       
-const geraCardapio = (CATEGORIASCardapio,NomesCarnes) => {
+const geraCardapio3 = (CATEGORIASCardapio,NomesCarnes) => {
 
   for (let i = 0; i < CATEGORIASCardapio.length; i++) {
     objetocardapio[CATEGORIASCardapio[i]]=null;
