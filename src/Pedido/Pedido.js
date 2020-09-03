@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Cabecalho from "../Cabecalho";
 import Navegacao from "../Navegacao";
 import estilo from "./pedido-estilo.module.css";
@@ -6,10 +6,6 @@ import Footer from "../Footer";
 import CategoriaPedido from "./CategoriaPedido";
 import CategoriaPedidoTitulo from "./CategoriaPedidoTitulo";
 import ItemCardapio from "./ItemCardapio";
-
-
-
-
 
 /*
 Saídas:
@@ -19,7 +15,6 @@ texto={comida}
 preço=preçosArr =map dos preço no Obj cardapio
 key= iteração do map dos nomes das comidas
 */
-
 
 // const cardapiovelho = {
 
@@ -124,69 +119,73 @@ key= iteração do map dos nomes das comidas
 //   },
 // };
 
-const CATEGORIASCardapio = ['carnes', 'vegetais']
-let galeto, churrasqueto, linguica = 0;
-const NomesCarnes = ['galeto','churrasqueto','linguica']
-let codigo, nome, preco, quantidade, preço = 0;
-const CATEGORIASMeta = {codigo,nome,preco,quantidade,preço}
-
+const CATEGORIASCardapio = ["carnes", "vegetais"];
+// let carnes, vegetais= 0;
+// const CATEGORIASCardapio = {carnes, vegetais}
+// let galeto, churrasqueto, linguica = 0;
+const NomesCarnes = ["galeto", "churrasqueto", "linguica"];
+// const NomesCarnes = {galeto,churrasqueto,linguica}
+let codigo,
+  nome,
+  preco,
+  quantidade,
+  preço = 0;
+// const CATEGORIASMeta = { codigo, nome, preco, quantidade, preço };
+const CATEGORIASMeta = [ 'codigo', 'nome', 'preco', 'quantidade', 'preço' ];
 let objetocardapio = {};
 
-const geraCardapio = (CATEGORIASCardapio,NomesCarnes,CATEGORIASMeta) => {
-
-  for (let i; i < CATEGORIASCardapio.length; i++) {
-
-    // objetocardapio[CATEGORIASCardapio[i]]=null;
-    objetocardapio[CATEGORIASCardapio[i]]=NomesCarnes;
-   
-
-  for (let j = 0; j < NomesCarnes.length; j++) {
-    objetocardapio.CATEGORIASCardapio[i].NomesCarnes[j] =CATEGORIASMeta;
-      // objetocardapio.CATEGORIASCardapio[i].NomesCarnes[j] ='CATEGORIASMeta';
-      // let arrMeta = [];
-      //  for (let y = 0; y < CATEGORIASMeta.length; y++) {
-        // objetocardapio.CATEGORIASCardapio[i].NomesCarnes[j] =
-        // arrMeta.push = [CATEGORIASMeta[y]];
-    //    "codigo":"codigo",
-    //    "preco":"codigo",
-    //    "nome":"codigo",
-    //    "quantidade":"codigo",
-    //  "preço":"codigo"
-      
-      }
-    }
-    return(objetocardapio)
-  }
 
 
+const itensCardapio ={
 
-      
-const geraCardapio3 = (CATEGORIASCardapio,NomesCarnes) => {
+  80 : [80,'Galeto',25.80,0,'R$ 25,80'],
+  83 : [83,'Churrasqueto',39.0,0,'R$ 39,90'],
+  86 : [86,'Linguiça',15.0,0,'R$ 15,50'],
+  
+}
 
+const geraCardapio = (CATEGORIASCardapio, NomesCarnes, CATEGORIASMeta) => {
   for (let i = 0; i < CATEGORIASCardapio.length; i++) {
-    objetocardapio[CATEGORIASCardapio[i]]=null;
+    objetocardapio[CATEGORIASCardapio[i]] = NomesCarnes;
+
     for (let j = 0; j < NomesCarnes.length; j++) {
+      objetocardapio[CATEGORIASCardapio[i]][NomesCarnes[j]] = CATEGORIASMeta;
 
-      objetocardapio[CATEGORIASCardapio[i]]= [NomesCarnes[j]];
       for (let y = 0; y < CATEGORIASMeta.length; y++) {
-        
+        objetocardapio[CATEGORIASCardapio[i]][NomesCarnes[j]][
+          CATEGORIASMeta[y]] =itensCardapio[i];
+      }
 
 
-        objetocardapio[CATEGORIASCardapio[i]][NomesCarnes[j]] =  [CATEGORIASMeta[y]];
+
+
       
+    }
+  }
+  return objetocardapio;
+};
 
-      }
+const geraCardapio3 = (CATEGORIASCardapio, NomesCarnes) => {
+  for (let i = 0; i < CATEGORIASCardapio.length; i++) {
+    objetocardapio[CATEGORIASCardapio[i]] = null;
+    for (let j = 0; j < NomesCarnes.length; j++) {
+      objetocardapio[CATEGORIASCardapio[i]] = [NomesCarnes[j]];
+      for (let y = 0; y < CATEGORIASMeta.length; y++) {
+        objetocardapio[CATEGORIASCardapio[i]][NomesCarnes[j]] = [
+          CATEGORIASMeta[y],
+        ];
       }
     }
-      return(objetocardapio)
-    
-    }
+  }
+  return objetocardapio;
+};
 
-
- objetocardapio=geraCardapio(CATEGORIASCardapio,NomesCarnes);
+objetocardapio = geraCardapio(CATEGORIASCardapio, NomesCarnes, CATEGORIASMeta);
 let carnesNomes = [];
 let vegetaisNomes = [];
-console.log(objetocardapio)
+console.log(CATEGORIASCardapio.length);
+console.log(CATEGORIASMeta.length);
+console.log(objetocardapio);
 // for (const [key, value] of Object.entries(objetocardapio.carnes)) {
 //   carnesNomes.push(objetocardapio.carnes[key].nome);
 
@@ -214,57 +213,39 @@ let vegetaisPrecos = [];
 //   // console.log(key, value);
 // }
 
-
-
-
 const Pedido = (props) => {
+  //calculadora
 
-//calculadora
-
-
-const [quantia, SetQuantia] = useState(0);
-
+  const [quantia, SetQuantia] = useState(0);
 
   const QuantiaMais = () => {
     SetQuantia((quantia) => quantia + 1);
-  }
+  };
 
   const QuantiaMenos = () => {
-
-    if  (quantia>0) {
-    SetQuantia((quantia) => quantia -1);
+    if (quantia > 0) {
+      SetQuantia((quantia) => quantia - 1);
     }
-}
-
-
+  };
 
   return (
     <div className={estilo.div_Inicio}>
-     
       <div className={estilo.div_topo}>
         <Cabecalho />
         <Navegacao />
       </div>
 
-
       <div className={estilo.main_div_pedido}>
-
-
         <div className={estilo.carta_pedido}>
-
           <div className={estilo.categorias_pedido}>
-          <CategoriaPedidoTitulo titulo="Mais Pedidos"></CategoriaPedidoTitulo>
+            <CategoriaPedidoTitulo titulo="Mais Pedidos"></CategoriaPedidoTitulo>
             <CategoriaPedidoTitulo titulo="Carnes"></CategoriaPedidoTitulo>
             <CategoriaPedidoTitulo titulo="Vegetais"></CategoriaPedidoTitulo>
             <CategoriaPedidoTitulo titulo="Acompanhamentos"></CategoriaPedidoTitulo>
-
           </div>
 
           <div className={estilo.cont_itens_pedido}>
-
-            <div className="titulo_itens_pedido">
-
-            </div>
+            <div className="titulo_itens_pedido"></div>
             <div className="itens_pedido">
               {/* switch (expr) {
   case 'Oranges':
@@ -279,21 +260,19 @@ const [quantia, SetQuantia] = useState(0);
     console.log(`Sorry, we are out of ${expr}.`);
 } */}
 
-            <CategoriaPedido
-              titulo="Carnes"
-              comidas={carnesNomes}
-              precos={carnesPrecos}
-            ></CategoriaPedido>
-            {/* <CategoriaPedido
+              <CategoriaPedido
+                titulo="Carnes"
+                comidas={carnesNomes}
+                precos={carnesPrecos}
+              ></CategoriaPedido>
+              {/* <CategoriaPedido
               titulo="Vegetais"
               comidas={vegetaisNomes}
               precos={vegetaisPrecos}
             ></CategoriaPedido> */}
             </div>
           </div>
-
         </div>
-
       </div>
 
       <div className={estilo.div_footer}>
