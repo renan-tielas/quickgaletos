@@ -123,7 +123,7 @@ const CATEGORIASCardapio = ["carnes", "vegetais"];
 // let carnes, vegetais= 0;
 // const CATEGORIASCardapio = {carnes, vegetais}
 // let galeto, churrasqueto, linguica = 0;
-const NomesCarnes = ["galeto", "churrasqueto", "linguica"];
+const NomesCarnes = ["galeto", "churrasqueto", "linguica","Contra Filet"];
 // const NomesCarnes = {galeto,churrasqueto,linguica}
 let codigo,
   nome,
@@ -136,9 +136,84 @@ let objetocardapio = {};
 
 
 
+
+let codigoCarnes, precoCarnes, quantidadeCarnes, preçoCarnes=[];
+
+codigoCarnes = [1,2,3,4]
+precoCarnes = [1,2,3,4]
+quantidadeCarnes =[1,2,3,4]
+preçoCarnes = [1,2,3,4]
+
+
+const geraCarnes = (NomesCarnes,CATEGORIASMeta,codigoCarnes, precoCarnes, quantidadeCarnes, preçoCarnes) => {
+
+  let itensCarnes = {}
+
+  for (let i = 0; i < NomesCarnes.length ; i++) {
+    for (let j = 0; j < array.length; j++) {
+      _`${NomesCarnes[i]}` = {CATEGORIASMeta}
+
+  
+      `${NomesCarnes[i]}`[CATEGORIASMeta[j]] = 1;
+      switch (j) {
+        case 0:
+          `${NomesCarnes[i]}`[CATEGORIASMeta[j]] = codigoCarnes[i] ;
+          break;
+        case 1:
+          `${NomesCarnes[i]}`[CATEGORIASMeta[j]] = NomesCarnes[i] ;
+          break;
+        case 2:
+          `${NomesCarnes[i]}`[CATEGORIASMeta[j]] = precoCarnes[i] ;
+          break;
+        case 3:
+          `${NomesCarnes[i]}`[CATEGORIASMeta[j]] = quantidadeCarnes[i] ;
+          break;
+        case 4:
+          `${NomesCarnes[i]}`[CATEGORIASMeta[j]] = preçoCarnes[i] ;
+          break;
+        default:
+          console.log(`Sorry we are out `);
+      }
+      
+      
+    }
+    
+    
+    itensCarnes.push(`${NomesCarnes[i]}`)
+  }
+  
+
+return (itensCarnes)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const geraCarnes = (NomesCarnes,CodigosCarnes,) => {
+
+
+
+
+}
+
+
+
+
+
 const itensCardapio ={
 
-  80 : [80,'Galeto',25.80,0,'R$ 25,80'],
+  80 : [80,'Galeto', 25.80, 0 ,'R$ 25,80'],
   83 : [83,'Churrasqueto',39.0,0,'R$ 39,90'],
   86 : [86,'Linguiça',15.0,0,'R$ 15,50'],
   
