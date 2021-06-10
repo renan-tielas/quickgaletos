@@ -1,0 +1,21 @@
+.cabecalho{
+    /* border:2px red solid; */
+    width: 100vw;
+    /* height:auto; */
+    /* min-height:4rem; */
+    border-radius: 4px;
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    /* height: 100vh;; */
+    border: 3px var(--cor-1) solid;
+    height: var(--altura_cab);
+    
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho{
+        flex-direction: column;
+
+    }
+  }

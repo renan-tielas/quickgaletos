@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,Verdana,Roboto,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-size: 1rem; */
 }
 
 a {
@@ -14,3 +15,38 @@ a {
 * {
   box-sizing: border-box;
 }
+
+button{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+:root{ 
+
+--cor-1: rgb(255, 169, 9);
+--cor-2: rgb(2, 146, 21);
+--cor-3: rgb(23, 99, 33);
+--cor-fundo:rgb(255, 255, 242);
+--tile-size: 50px;
+--altura_bot:4rem;
+--altura_nav:5rem;
+--altura_cab:5rem;
+
+--border-width: 2px;
+--border-radius: 4px;
+/* width: var(--tile-size); */
+
+}
+
+@media screen and (max-width: 600px) {
+  :root{ 
+  --altura_bot:5rem;
+--altura_nav:10rem;
+--altura_cab:10rem;
+ }
+   }
