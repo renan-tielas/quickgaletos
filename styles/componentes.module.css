@@ -97,24 +97,26 @@ justify-content: space-evenly;
   display: flex;
   flex-direction: row;
   width: 90vw;
+  height: auto;
   align-self: center;
   justify-content: center;
   justify-items: center;
   position: relative;
   border: 4px var(--cor-1) solid;
   left:5vw;
-  margin-top: 4vh;
+  margin-top: 6vh;
 }
 
 
 
 .cartao_3{
   width: 30%;
-  text-align: center;
+  text-align:center ;
+  word-wrap: break-word;
   justify-items: center;
   height: 20rem;
   padding-top: 0.4rem;
-  font-size: 3vw;
+  font-size: 1.6rem;
   margin-top: 1rem;
   /* border-right:2px rgb(59, 34, 5) solid; */
   background-color: rgb(255, 255, 255);
@@ -123,6 +125,7 @@ justify-content: space-evenly;
   margin:1rem 0  0 2rem;
   position: relative;
   left:-1%;
+  scroll-behavior: smooth;
   /* box-shadow: 1px 2px 2px 5px  black; */
   /* box-shadow: 0 0 15px 1px rgb(211, 211, 211); */
   /* box-shadow: inset 0 0 15px 5px rgba(0,0,0,0.75); */
@@ -132,6 +135,7 @@ justify-content: space-evenly;
 .conteudo_cartao_3{
   /* margin-top: 1rem;
   margin-left: 1rem; */
+  text-align: justify;
   padding: 1rem ;
 font-size: 1rem;
 color:rgb(46, 46, 46);
@@ -140,7 +144,12 @@ font-family:  Roboto, Geneva, Tahoma, sans-serif, Georgia, sans-serif;}
 
 
 
-
+.divisoria{
+  position: relative;
+  top: 5rem;
+  height: 10rem;
+  border: 1px orange solid;
+}
 
 @media screen and (max-width: 600px) {
   .botao_pag{
