@@ -4,7 +4,8 @@ Desde 1975 fazendo deliciosa comida na brasa.
 
 ## Desktop
 
-
+![quick4](https://user-images.githubusercontent.com/52353767/167041460-613022e9-6323-480c-b8e6-e46c61978594.png)
+<br/><br/><br/>
 ![galeto0](https://user-images.githubusercontent.com/52353767/166744904-191e6b1d-1c8e-4f30-8557-3cb454302a8b.png)
 <br/><br/><br/>
 ![galeto1](https://user-images.githubusercontent.com/52353767/166744896-967b860e-a031-43d4-a005-6462975ecf38.png)
